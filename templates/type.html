@@ -1,0 +1,59 @@
+{% load static %}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> 分类</h3>
+    </div>
+    <div class="panel-body">
+        <div id="main" style="width: 100%;height:400px;"></div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $.ajaxSetup({
+                    data: {csrfmiddlewaretoken: '{{ csrf_token }}' }
+                });
+
+
+                $.ajax({
+                    type:"GET",
+                    url: "{% url 'run_get_category' %}", //后台处理函数的url 这里用的是static url 需要与urls.py中的name一致#}
+                    cache: false,
+                    dataType: "json",
+                    success: function(result, statues, xml) {
+                        console.log(result);
+
+                        // 基于准备好的dom，初始化echarts实例
+                        var myChart = echarts.init(document.getElementById('main'),'macarons');
+
+                        var dataMsg = result['category_list'];
+                        yData = Object.values(dataMsg);
+                        xData = Object.keys(dataMsg);
+
+                        // 指定图表的配置项和数据
+                        var option = {
+                            title: {
+                                text: '文本分类'
+                            },
+                            tooltip: {},
+                            legend: {
+                                data:['数量']
+                            },
+                            xAxis: {
+                                data: xData
+                            },
+                            yAxis: {},
+                            series: [{
+                                name: '数量',
+                                type: 'bar',
+                                data: yData
+                            }]
+                        };
+
+                        // 使用刚指定的配置项和数据显示图表。
+                        myChart.setOption(option);
+                    }
+                })
+            });
+        </script>
+    </div>
+</div>

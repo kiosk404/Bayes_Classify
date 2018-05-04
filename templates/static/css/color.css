@@ -1,0 +1,25 @@
+/* ===================================
+	HIGHLIGHT
+====================================== */
+span.clean-color-contras{
+    color: #5783d5;
+}
+
+.clean-line{
+    background-color: #5783d5;
+}
+
+/* ===================================
+	ROUND ICON
+====================================== */
+.clean-blurb-round-icon:hover .clean-icon{
+    background-color: #5783d5;
+}
+
+.clean-icones .clean-icon i {
+    color: #dadada;
+}
+
+.clean-blurb-round-icon:hover h3{
+    color: #5783d5;
+}

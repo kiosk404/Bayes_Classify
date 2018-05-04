@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pynlpir=pynlpir.cli:cli
+    
