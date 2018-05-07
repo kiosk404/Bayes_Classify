@@ -19,5 +19,5 @@ csdn的博客。等数据收集到一定步骤就可以文本分类了。
 
 安装运行可能出现的问题。
 -------
-nlpir初始化失败。--- 这是因为 nlpir 库需要每个月更新一次。需要从新去github上下载授权。可参考 http://blog.sina.com.cn/s/blog_7ad2a8d50102val9.html    
-redis里面一定要放进去训练的样本。我会把redis中的数据上传到github上   
+1.nlpir初始化失败。--- 这是因为 nlpir 库需要每个月更新一次。需要从新去github上下载授权。可参考 http://blog.sina.com.cn/s/blog_7ad2a8d50102val9.html    
+2.redis里面一定要放进去训练的样本。我会把redis中的数据上传到github上   
