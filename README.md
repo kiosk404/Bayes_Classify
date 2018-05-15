@@ -16,16 +16,16 @@ csdn的博客。等数据收集到一定地步就可以文本分类了。
 
 安装运行步骤
 -------
-环境是python3.6 .运行前请打开redis，不要有密码，host设置为127.0.0.1 
-pip -m requirements.txt
-进入redis中，导入redis数据。
-bash>   < csdn.json redis-load -u 127.0.0.1:6378
-执行命令 python manager runserver。
-浏览器访问127.0.0.1:8000。
+环境是python3.6 .运行前请打开redis，不要有密码，host设置为127.0.0.1 		
+pip -m requirements.txt		
+进入redis中，导入redis数据。		
+bash>   < csdn.json redis-load -u 127.0.0.1:6378		
+执行命令 python manager runserver。		
+浏览器访问127.0.0.1:8000。		
+		
+注：这个导入工具需要自己安装，是基于ruby的。		
 
-注：这个导入工具需要自己安装，是基于ruby的。
-
-安装运行可能出现的问题
+安装可能出现的问题
 -------
 1.nlpir初始化失败。--- 这是因为 nlpir 库需要每个月更新一次。需要从新去github上下载授权。可参考 http://blog.sina.com.cn/s/blog_7ad2a8d50102val9.html    
 2.redis里面一定要放进去训练的样本。我会把redis中的数据上传到github上   
