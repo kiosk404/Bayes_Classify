@@ -16,14 +16,14 @@ csdn的博客。等数据收集到一定地步就可以文本分类了。
 
 安装运行步骤
 -------
-环境是python3.6 .运行前请打开redis，不要有密码，host设置为127.0.0.1 		
-pip -m requirements.txt		
-进入redis中，导入redis数据。		
-bash>   < csdn.json redis-load -u 127.0.0.1:6378		
-执行命令 python manager runserver。		
-浏览器访问127.0.0.1:8000。		
+环境是python3.6 .运行前请打开redis，不要有密码，host设置为127.0.0.1 </br>
+pip -m requirements.txt		</br>
+进入redis中，导入redis数据。	</br>	
+bash>   < csdn.json redis-load -u 127.0.0.1:6378	</br>
+执行命令 python manager runserver。		</br>
+浏览器访问127.0.0.1:8000。		</br>
 		
-注：这个导入工具需要自己安装，是基于ruby的。		
+注：这个导入工具需要自己安装，是基于ruby的。</br>		
 
 安装可能出现的问题
 -------
