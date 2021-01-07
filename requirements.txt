@@ -5,7 +5,7 @@ click==6.7
 Django==2.2.13
 idna==2.6
 jieba==0.39
-lxml==4.2.1
+lxml==4.6.2
 Pillow==6.2.0
 PyNLPIR==0.5.2
 pyparsing==2.2.0
